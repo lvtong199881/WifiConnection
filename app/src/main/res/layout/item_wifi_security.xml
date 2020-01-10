@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_wifi_item"
-    android:padding="16dp"
-    android:layout_marginBottom="8dp"
+    android:padding="32dp"
+    android:layout_marginBottom="16dp"
     >
     <TextView
         android:id="@+id/tv_security"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/color_ff8f00"
-        android:textSize="18sp"
+        android:textSize="32sp"
         tools:text="安全性"/>
 
 </LinearLayout>

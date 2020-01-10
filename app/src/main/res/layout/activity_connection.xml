@@ -6,7 +6,7 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/bg_title"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
@@ -16,8 +16,9 @@
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
             android:src="@drawable/guide_back_icon" />
 
         <TextView
@@ -27,8 +28,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:text="其他联网方式" />
+            android:textSize="48sp"
+            android:text="" />
 
         <TextView
             android:id="@+id/tv_action"
@@ -36,6 +37,8 @@
             android:layout_height="match_parent"
             android:textColor="@android:color/white"
             android:gravity="center"
+            android:textSize="32sp"
+            android:padding="16dp"
             android:background="@android:color/transparent"
             android:text="连接" />
 
@@ -43,10 +46,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="32dp"
         android:background="@drawable/bg_wifi_item"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/textView2"
@@ -55,22 +58,22 @@
             android:gravity="center"
             android:text="密码"
             android:textColor="@color/color_ff8f00"
-            android:textSize="18sp" />
+            android:textSize="32sp" />
 
         <EditText
             android:id="@+id/et_password"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:background="@android:color/white"
             android:inputType="textPassword" />
 
         <ImageView
             android:id="@+id/iv_show_password"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
             android:src="@drawable/anquanxing2_3" />
 
     </LinearLayout>

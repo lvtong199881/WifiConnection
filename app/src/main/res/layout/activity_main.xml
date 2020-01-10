@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/bg_title"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
@@ -20,9 +20,10 @@
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/guide_back_icon"
+            android:padding="16dp"
             android:text="Button" />
 
         <TextView
@@ -32,7 +33,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="48sp"
             android:text="网络设置" />
 
         <TextView
@@ -41,7 +42,9 @@
             android:layout_height="match_parent"
             android:textColor="@android:color/white"
             android:gravity="center"
+            android:padding="16dp"
             android:background="@android:color/transparent"
+            android:textSize="32sp"
             android:text="更多连接" />
 
     </LinearLayout>
@@ -49,24 +52,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_wifi_item"
-    android:padding="16dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
-    android:layout_marginTop="16dp"
+    android:padding="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginTop="32dp"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="24dp"
         android:paddingEnd="0dp"
-        android:paddingBottom="8dp">
+        android:paddingBottom="16dp">
         <Switch
             android:id="@+id/switch_wifi_enabled"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="无线网络"
             android:textColor="@color/color_ff8f00"
-            android:textSize="18sp"/>
+            android:textSize="32sp"/>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -79,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="32dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -91,8 +94,8 @@
 
             <ImageView
                 android:id="@+id/iv_right_arrow"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/voice_set_arrow_right" />
         </LinearLayout>
 
@@ -105,8 +108,8 @@
 
             <ImageView
                 android:id="@+id/iv_connected"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:srcCompat="@drawable/anquanxing_2" />
 
             <TextView
@@ -115,6 +118,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:gravity="center"
+                android:textSize="32sp"
                 android:textColor="@color/color_ff8f00"
                 tools:text="SSID" />
         </LinearLayout>
@@ -126,9 +130,9 @@
         android:id="@+id/rv_wifi_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="16dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:paddingTop="32dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
         android:paddingBottom="0dp"
         />
 </LinearLayout>

@@ -8,7 +8,7 @@
     tools:context=".SecurityActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/bg_title"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
@@ -18,8 +18,9 @@
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
             android:src="@drawable/guide_back_icon"
             android:text="Button" />
 
@@ -30,7 +31,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="48sp"
             android:text="安全性" />
 
         <TextView
@@ -39,7 +40,9 @@
             android:layout_height="match_parent"
             android:textColor="@android:color/transparent"
             android:gravity="center"
+            android:padding="16dp"
             android:background="@android:color/transparent"
+            android:textSize="32sp"
             android:text="更多连接" />
 
     </LinearLayout>
@@ -48,6 +51,6 @@
         android:id="@+id/rv_security_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"/>
+        android:layout_margin="32dp"/>
 
 </LinearLayout>

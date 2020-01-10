@@ -6,8 +6,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_wifi_item"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:layout_marginBottom="8dp">
+    android:padding="32dp"
+    android:layout_marginBottom="16dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -18,20 +18,26 @@
 
         <ImageView
             android:id="@+id/iv_locked"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
             app:srcCompat="@drawable/wifi_lock" />
 
         <ImageView
             android:id="@+id/iv_signal_strength"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
             android:src="@drawable/wifi_signal_level" />
 
         <ImageView
             android:id="@+id/iv_right_arrow"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
             android:src="@drawable/night_model_close" />
     </LinearLayout>
 
@@ -44,8 +50,8 @@
 
         <ImageView
             android:id="@+id/iv_connected"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:srcCompat="@drawable/anquanxing_2"
             android:visibility="invisible"/>
 
@@ -53,8 +59,9 @@
             android:id="@+id/tv_ssid"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:gravity="center"
+            android:textSize="32sp"
             android:textColor="@color/color_ff8f00"
             tools:text="SSID" />
     </LinearLayout>
